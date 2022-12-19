@@ -14,6 +14,3 @@ def get_daily_horoscope(sign: str, day: str) -> dict:
     response = requests.get(url, params)
 
     return response.json()
-
-
-print(get_daily_horoscope("Capricorn", "today"))
